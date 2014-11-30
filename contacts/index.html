@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Address Book</title>
+	<link rel="stylesheet" href="../assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<nav class="cf">
+			<a href="index.html">
+			    <div class="logo">
+			      <h1>My Address Book</h1>
+			    </div>
+		    </a>
+		    <div class="seach">
+		      <form action="#" class="search-form">
+		        <input type="text" class="search" placeholder="Search">
+		      </form>
+		    </div>
+		    <ul class="sort-menu">
+		    	<li><a href="#">Sort</a></li>
+		    	<ul class="submenu">
+		    		<li><a href="#">By Last Name</a></li>
+		    		<li><a href="#">By Last Updated</a></li>
+		    	</ul>
+		    </ul>
+		    <a href="../add/index.html">
+		      <div class="add"><span class="nav-text">+</span></div>
+		    </a>
+		</nav>
+	</div> <!-- container -->
+
+	<main>
+
+	    <div class="container-contacts">
+	      	<p class="contact-amt">200 Contacts</p>
+
+			<div class="accordion cf">
+				<h3>Alex Appleton</h3>
+				<div class="contact-info cf">
+	  
+				  <div class="address-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/home.png" alt="Home Icon">
+				      </div>
+				      <div class="address-info">
+				        <p class="street">108 Main St</p>
+				        <p>Woodstown NJ 08765</p>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="phone-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/phone.png" alt="Phone Icon">
+				      </div>
+				      <div class="phone-info cf">
+				        <div class="labels">
+				          <p class="personal">Personal</p>
+				          <p class="work">Work</p>
+				        </div>
+				        <div class="phone-nos">
+				          <p class="phone-p">555-555-1000</p>
+				          <p class="phone-w">885-555-1000</p>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="email-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/mail.png" alt="Email Icon">
+				      </div>
+				      <div class="email-info cf">
+				        <div class="labels">
+				          <p class="personal">Personal</p>
+				          <p class="work">Work</p>
+				        </div>
+				        <div class="emails">
+				          <p class="email-p">a.appleton@gmail.com</p>
+				          <p class="email-w">aappleton@msn.com</p>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="notes-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+				      </div>
+				      <div class="notes-info">
+				        <p class="skype">a.apples</p>
+				        <p class="twitter">Iloveapples</p>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="actions-btn">
+				    <a href="#"><div class="delete">Delete</div></a>
+				    <a href="../edit/index.html"><div class="edit">Edit</div></a>
+				  </div>
+				  
+				</div> <!-- contact-info -->
+
+				<h3>Chris Middleton</h3>
+              	<div class="contact-info cf">
+
+                  <div class="address-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/home.png" alt="Home Icon">
+                      </div>
+                      <div class="address-info">
+                        <p class="street">1 Stewart Rd</p>
+                        <p>Woodstock NY 08321</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="phone-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/phone.png" alt="Phone Icon">
+                      </div>
+                      <div class="phone-info cf">
+                        <div class="labels">
+                          <p class="personal">Personal</p>
+                        </div>
+                        <div class="phone-nos">
+                          <p class="phone-p">885-555-1111</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="email-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/mail.png" alt="Email Icon">
+                      </div>
+                      <div class="email-info cf">
+                        <div class="labels">
+                          <p class="work">Work</p>
+                        </div>
+                        <div class="emails">
+                          <p class="email-w">cmiddleton@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notes-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+                      </div>
+                      <div class="notes-info">
+                        <p class="skype">chrisssssss</p>
+                        <p class="twitter">chrischris</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions-btn cf">
+                    <a href="#"><div class="delete">Delete</div></a>
+                    <a href="../edit/index.html"><div class="edit">Edit</div></a>
+                  </div>
+
+              	</div> <!-- contact-info -->
+
+              	<h3>Chris Appleton</h3>
+              	<div class="contact-info cf">
+
+                  <div class="address-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/home.png" alt="Home Icon">
+                      </div>
+                      <div class="address-info">
+                        <p class="street">108 Main St</p>
+                        <p>Woodstown NJ 08765</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="phone-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/phone.png" alt="Phone Icon">
+                      </div>
+                      <div class="phone-info cf">
+                        <div class="labels">
+                          <p class="personal">Personal</p>
+                          <p class="work">Work</p>
+                        </div>
+                        <div class="phone-nos">
+                          <p class="phone-p">856 - 100 - 9999</p>
+                          <p class="phone-w">766 - 231 - 8000</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="email-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/mail.png" alt="Email Icon">
+                      </div>
+                      <div class="email-info cf">
+                        <div class="labels">
+                          <p class="personal"></p>
+                          <p class="work"></p>
+                        </div>
+                        <div class="emails">
+                          <p class="email-p"></p>
+                          <p class="email-w"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="notes-container cf">
+                    <div class="contact-middle cf">
+                      <div class="icon-container">
+                        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+                      </div>
+                      <div class="notes-info">
+                        <p class="skype">c.appleton</p>
+                        <p class="twitter">appleton</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="actions-btn">
+                    <a href="#"><div class="delete">Delete</div></a>
+                    <a href="../edit/index.html"><div class="edit">Edit</div></a>
+                  </div>
+
+              	</div> <!-- contact-info -->
+			
+				<h3>Dave Davidson</h3>
+	              <div class="contact-info cf">
+
+	                  <div class="address-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/home.png" alt="Home Icon">
+	                      </div>
+	                      <div class="address-info">
+	                        <p class="street">111 Main St</p>
+	                        <p>Newton NY 45667</p>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="phone-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/phone.png" alt="Phone Icon">
+	                      </div>
+	                      <div class="phone-info cf">
+	                        <div class="labels">
+	                          <p class="personal">Personal</p>
+	                          <p class="work">Work</p>
+	                        </div>
+	                        <div class="phone-nos">
+	                          <p class="phone-p">670-900-8765</p>
+	                          <p class="phone-w">888-555-1000</p>
+	                        </div>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="email-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/mail.png" alt="Email Icon">
+	                      </div>
+	                      <div class="email-info cf">
+	                        <div class="labels">
+	                          <p class="personal">Personal</p>
+	                          <p class="work"></p>
+	                        </div>
+	                        <div class="emails">
+	                          <p class="email-p">davidson@gmail.com</p>
+	                          <p class="email-w">davidson@yahoo.com</p>
+	                        </div>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="notes-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+	                      </div>
+	                      <div class="notes-info">
+	                        <p class="skype">davie</p>
+	                        <p class="twitter">d.davie</p>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="actions-btn">
+	                    <a href="#"><div class="delete">Delete</div></a>
+	                    <a href="../edit/index.html"><div class="edit">Edit</div></a>
+	                  </div>
+
+	              </div> <!-- contact-info -->
+
+	            <h3>Emma Davis</h3>
+	              <div class="contact-info cf">
+
+	                  <div class="address-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/home.png" alt="Home Icon">
+	                      </div>
+	                      <div class="address-info">
+	                        <p class="street">111 Main St</p>
+	                        <p>Newton NY 45667</p>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="phone-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/phone.png" alt="Phone Icon">
+	                      </div>
+	                      <div class="phone-info cf">
+	                        <div class="labels">
+	                          <p class="personal">Personal</p>
+	                          <p class="work">Work</p>
+	                        </div>
+	                        <div class="phone-nos">
+	                          <p class="phone-p">670-900-8765</p>
+	                          <p class="phone-w">888-555-1000</p>
+	                        </div>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="email-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/mail.png" alt="Email Icon">
+	                      </div>
+	                      <div class="email-info cf">
+	                        <div class="labels">
+	                          <p class="personal">Personal</p>
+	                          <p class="work"></p>
+	                        </div>
+	                        <div class="emails">
+	                          <p class="email-p">davidson@gmail.com</p>
+	                          <p class="email-w">davidson@yahoo.com</p>
+	                        </div>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="notes-container cf">
+	                    <div class="contact-middle cf">
+	                      <div class="icon-container">
+	                        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+	                      </div>
+	                      <div class="notes-info">
+	                        <p class="skype">davie</p>
+	                        <p class="twitter">d.davie</p>
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="actions-btn">
+	                    <a href="#"><div class="delete">Delete</div></a>
+	                    <a href="../edit/index.html"><div class="edit">Edit</div></a>
+	                  </div>
+
+	              </div> <!-- contact-info -->
+			</div> <!-- accordion -->
+
+	    </div><!-- container-contacts -->
+    
+    </main>
+
+
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../assets/js/myjquery.js"></script>
+</body>
+</html>

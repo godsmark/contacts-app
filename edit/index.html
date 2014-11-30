@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Address Book</title>
+	<link rel="stylesheet" href="../assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<nav class="cf">
+			<a href="../contacts/index.html">
+			    <div class="logo">
+			      <h1>My Address Book</h1>
+			    </div>
+			</a>
+		    <div class="seach">
+		      <form action="#" class="search-form">
+		        <input type="text" class="search" placeholder="Search">
+		      </form>
+		    </div>
+		    <ul class="sort-menu">
+		    	<li><a href="#">Sort</a></li>
+		    	<ul class="submenu">
+		    		<li><a href="#">By Last Name</a></li>
+		    		<li><a href="#">By Last Updated</a></li>
+		    	</ul>
+		    </ul>
+		    <a href="../add/index.html">
+		      <div class="add"><span class="nav-text">+</span></div>
+		    </a>
+		</nav>
+	</div> <!-- container -->
+
+	<main>
+
+	    <div class="container-contacts2">
+
+			<div class="contacts">
+				<div class="contact-info cf">
+	  			  
+	  			  <div class="user-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/user.png" alt="User Icon">
+				      </div>
+				      <div class="user-info">
+				        <input type="text" value="Alex" placeholder="First Name">
+				        <input type="text" value="Appleton" placeholder="Last Name">
+				      </div>
+				    </div>
+				  </div>
+				  
+				  <div class="address-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/home.png" alt="Home Icon">
+				      </div>
+				      <div class="address-info cf">
+				        <input type="text" value="108 Main St" placeholder="Street">
+				        <input type="text" value="Woodstown" placeholder="City" class="city">
+				        <input type="text" value="NY" placeholder="State" class="state">
+				        <input type="text" value="09876" placeholder="Zip Code" class="zip-code">
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="phone-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/phone.png" alt="Phone Icon">
+				      </div>
+				      <div class="phone-info cf">
+				      	<div class="labels">
+				          <p class="personal">Personal</p>
+				          <p class="work">Work</p>
+				        </div>
+				      	<div class="phone-nos">
+				          <input type="text" value="876-876-1000" placeholder="000-000-0000">
+				          <input type="text" value="873-201-9000" placeholder="000-000-0000">
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="email-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/mail.png" alt="Email Icon">
+				      </div>
+				      <div class="email-info cf">
+				      	<div class="labels">
+				          <p class="personal">Personal</p>
+				          <p class="work">Work</p>
+				        </div>
+				        <div class="phone-nos">
+				        	<input type="text" value="aappleton@gmail.com" placeholder="someone@gmail.com">
+				        	<input type="text" value="apples@yahoo.com" placeholder="someone@gmail.com">
+				    	</div>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="notes-container cf">
+				    <div class="contact-middle cf">
+				      <div class="icon-container">
+				        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
+				      </div>
+				      <div class="notes-info">
+				        <textarea placeholder="Notes"></textarea>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="submit-btn">
+				  	<form action="../contacts/index.html">
+				    	<input type="submit" value="Save Changes" class="edit-contact">
+					</form>
+				  </div>
+				  
+				</div> <!-- contact-info -->
+
+			
+			</div> <!-- contacts -->
+
+	    </div><!-- container-contacts -->
+    
+    </main>
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/myjquery.js"></script>
+</body>
+</html>
