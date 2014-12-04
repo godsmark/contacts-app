@@ -45,11 +45,12 @@ p {
 
 a {
 	color: black;
+	text-decoration: none;
 }
 
 /* ===== NAV ===== */
 
-.logo, .search, .sort-menu, .add {
+.logo, .search, .add {
 	display: block;
 	float: left;
 	box-sizing: border-box;
@@ -60,12 +61,12 @@ h1:hover, .nav-text:hover {
 	opacity: .5;
 }
 
-.logo, .sort-menu {
+.logo {
 	font-size: 1.5em;
 	padding: .5em 0em;
 }
 
-.logo, .sort-menu, .add {
+.logo, .add {
 	text-align: center;
 }
 
@@ -76,18 +77,8 @@ h1:hover, .nav-text:hover {
 
 .search {
 	background-color: #FFFFFF;
-	width: 45%;
+	width: 65%;
 	padding-left: .5em;
-}
-
-.sort-menu {
-	background: #D8D8D8;
-	width: 20%;
-	box-sizing: border-box;
-}
-
-.sort-menu a {
-	text-decoration: none;
 }
 
 .add {
@@ -97,34 +88,6 @@ h1:hover, .nav-text:hover {
 	padding: .3em 0em;
 }
 
-.submenu {
-	position: absolute;
-	visibility: hidden;
-	margin:0;
-	padding:0;
-	width: 20%;
-}
-
-.submenu li {
-	background: #D8D8D8;
-	padding: .7em .12em .2em .12em;
-	text-align: left;
-	box-sizing: border-box;
-}
-
-.submenu li a {
-	display:inline;
-	float:none;
-	font-size: .9em;
-}
-
-.submenu li a:link, .submenu li a:visited {
-	background: #D8D8D8;
-}
-
-.submenu li a:hover {
-	opacity: .5;
-}
 
 /* ===== FORMS ===== */
 
@@ -141,7 +104,8 @@ input:focus, textarea:focus {
 	border: 0;
 }
 
-input[type=text], textarea {
+input[type=text],
+textarea {
 	font-size: 1em;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -150,7 +114,7 @@ textarea {
 	width: 100%;
 }
 
-.search[type=text] {
+.search[type=search] {
 	font-size: 1.5em;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -179,7 +143,7 @@ h3 {
 	margin: 0 auto;
 }
 
-.contact-info, {
+.contact-info {
 	max-width: 600px;
 	margin: 0 auto;
 }
@@ -201,7 +165,7 @@ h3 {
 	display: block;
 }
 
-#notes-pic {
+.notes-pic {
 	width: 25px;
 }
 
@@ -260,6 +224,10 @@ h3 {
 	padding: 1em;
 }
 
+.delete:hover, .edit:hover {
+	opacity: .8;
+}
+
 .delete {
 	background: #7C7C7C;
 	margin-right: .5em;
@@ -268,6 +236,160 @@ h3 {
 .edit {
 	padding: 1em 1.5em;
 	background: #7A467F;
+}
+
+/* ===== JQUERY ACCORDION ===== */
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+.ui-icon .ui-icon-open, .ui-icon-close {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.ui-icon-open, .ui-icon-close {
+	width: 20px;
+	background-position: -20px;
+}
+
+.ui-icon-open {
+	background: url(../assets/images/icon-open.png) no-repeat;
+}
+
+.ui-icon-closed {
+	background: url(../assets/images/icon-closed.png) no-repeat;
+}
+
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 7px 0 0 0;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; 
+	font-size: 2em;
+} 
+
+.ui-accordion .ui-accordion-header:first-child {
+	margin: 0;
+}
+
+.ui-accordion .ui-accordion-header:focus {
+	outline: 0;
+}
+
+.ui-accordion .ui-accordion-content {
+	padding: 1em 6.2em;
+	border-top: 0;
+	overflow: auto;
+	background: #FFFFFF;
+}
+
+.ui-widget {
+	font-size: 1em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: #FFFFFF;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+	color: #7A467F;
+}
+
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	color: #7A467F;
+	text-decoration: none;
+	border: 0;
+	outline: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	color: #7A467F;
+	outline: 0;
+	border: 0;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #7A467F;
+	text-decoration: none;
+	outline: 0;
+	border: 0;
 }
 
 /* ===== ADD NEW CONTACT ===== */
@@ -312,10 +434,14 @@ h3 {
 	text-align: center;
 }
 
+.hide {
+	display: none;
+}
+
 @media only screen and (max-width: 800px) {
 	
 	/* ===== NAV ===== */
-	.logo, .search, .sort-menu, .add {
+	.logo, .search, .add {
 		box-sizing: border-box;
 		height: 50px;
 	}
@@ -324,30 +450,20 @@ h3 {
 		opacity: .5;
 	}
 
-	.logo, .sort-menu {
-		font-size: 1.1em;
-		padding: 1em 0em;
-	}
-
 	.logo {
-		width: 45%;
+		font-size: 1.1em;
+		padding: 1em 1em;
+		width: 70%;
+		text-align: left;
 	}
 
 	.search {
-		width: 55%;
+		width: 100%;
 		padding-left: .5em;
 	}
 
-	.sort-menu, .submenu  {
-		width: 60%;
-	}
-
-	.submenu li {
-		text-align: center;
-	}
-
 	.add {
-		width: 40%;
+		width: 30%;
 		font-size: 1.5em;
 		padding: .6em 0em;
 	}
@@ -358,8 +474,27 @@ h3 {
 		font-size: 16px;
 	}
 
-	.search[type=text] {
+	.search[type=search] {
 		font-size: 1em;
+	}
+
+	/* ==== ACCORDION ==== */
+
+	.ui-widget {
+		font-size: .5em;
+	}
+
+	.ui-accordion .ui-accordion-header {
+		padding: .7em 0em;
+		font-size: 3em;
+	}
+
+	.ui-accordion .ui-accordion-content {
+		padding: 0em 11em;
+		border-top: 0;
+		overflow: hidden;
+		max-width: 600px;
+		margin: 0 auto;
 	}
 
 	/* ==== OTHER ==== */
@@ -373,7 +508,7 @@ h3 {
 		font-size: 1em;
 	}
 
-	#notes-pic {
+	.notes-pic {
 		width: 20px;
 	}
 
@@ -417,8 +552,19 @@ h3 {
 	.user-container {
 		font-size: 16px;
 	}
+}
 
+@media only screen and (max-width: 500px) {
 
+	/* ==== ACCORDION ==== */
+		
+	.ui-accordion .ui-accordion-content {
+		padding: 0em 3em;
+		border-top: 0;
+		overflow: hidden;
+		max-width: 600px;
+		margin: 0 auto;
+	}
 }
 
 

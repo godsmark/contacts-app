@@ -1,12 +1,11 @@
 <!doctype html>
-<html lang="us">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Address Book</title>
-	<link rel="stylesheet" href="../assets/css/jquery-ui.css">
 	<link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 
 </head>
 <body>
@@ -14,25 +13,18 @@
 	<div class="container">
 		<nav class="cf">
 			<a href="../contacts/index.html">
-			    <div class="logo">
-			      <h1>My Address Book</h1>
-			    </div>
-			</a>
-		    <div class="seach">
-		      <form action="#" class="search-form">
-		        <input type="text" class="search" placeholder="Search">
-		      </form>
+		    <div class="logo">
+		      <h1>My Address Book</h1>
 		    </div>
-		    <ul class="sort-menu">
-		    	<li><a href="#">Sort</a></li>
-		    	<ul class="submenu">
-		    		<li><a href="#">By Last Name</a></li>
-		    		<li><a href="#">By Last Updated</a></li>
-		    	</ul>
-		    </ul>
-		    <a href="index.html">
-		      <div class="add"><span class="nav-text">+</span></div>
-		    </a>
+			</a>
+			<a href="index.html">
+		    <div class="add"><span class="nav-text">+</span></div>
+	    </a>
+	    <div class="seach">
+	      <form action="#" class="search-form">
+	        <input type="search" class="search" placeholder="Search">
+	      </form>
+	    </div>
 		</nav>
 	</div> <!-- container -->
 
@@ -48,10 +40,12 @@
 				      <div class="icon-container">
 				        <img src="../assets/images/user.png" alt="User Icon">
 				      </div>
-				      <div class="user-info">
-				        <input type="text" placeholder="First Name" class="first-n">
-				        <input type="text" placeholder="Last Name" class="last-n">
-				      </div>
+				      <form class="user-info">
+				      	<label for="first-n" class="hide">First Name</label>
+				        <input type="text" id="first-n" placeholder="First Name" class="first-n">
+				        <label for="last-n" class="hide">Last Name</label>
+				        <input type="text" id="last-n" placeholder="Last Name" class="last-n">
+				      </form>
 				    </div>
 				  </div>
 	  
@@ -60,12 +54,16 @@
 				      <div class="icon-container">
 				        <img src="../assets/images/home.png" alt="Home Icon">
 				      </div>
-				      <div class="address-info">
-				        <input type="text" placeholder="Street" class="street">
-				        <input type="text" placeholder="City" class="city">
-				        <input type="text" placeholder="State" class="state">
-				        <input type="text" placeholder="Zip Code" class="zip-code">
-				      </div>
+				      <form class="address-info">
+				      	<label for="street" class="hide">Street</label>
+				        <input type="text" id="street" placeholder="Street" class="street">
+				        <label for="city" class="hide">City</label>
+				        <input type="text" id="city" placeholder="City" class="city">
+				        <label for="state" class="hide">State</label>
+				        <input type="text" id="state" placeholder="State" class="state">
+				        <label for="zip-code" class="hide">Zip Code</label>
+				        <input type="text" id="zip-code" placeholder="Zip Code" class="zip-code">
+				      </form>
 				    </div>
 				  </div>
 
@@ -79,10 +77,12 @@
 				          <p class="personal">Personal</p>
 				          <p class="work">Work</p>
 				        </div>
-				      	<div class="phone-nos">
-				          <input type="text" placeholder="000-000-0000" class="phone-p">
-				          <input type="text" placeholder="000-000-0000"class="phone-w">
-				        </div>
+				      	<form class="phone-nos">
+				      		<label for="phone-p" class="hide">Personal Phone</label>
+				          <input type="text" id="phone-p" placeholder="000-000-0000" class="phone-p">
+				          <label for="phone-w" class="hide">Work Phone</label>
+				          <input type="text" id="phone-w" placeholder="000-000-0000" class="phone-w">
+				        </form>
 				       </div>
 				    </div>
 				  </div>
@@ -97,10 +97,12 @@
 				          <p class="personal">Personal</p>
 				          <p class="work">Work</p>
 				        </div>
-				        <div class="phone-nos">
-				        	<input type="text" placeholder="someone@gmail.com" class="email-p">
-				        	<input type="text" placeholder="someone@gmail.com" class="email-w">
-				    	</div>
+				        <form class="phone-nos">
+				        	<label for="email-p" class="hide">Personal Email</label>
+				        	<input type="text" id="email-p" placeholder="someone@gmail.com" class="email-p">
+				        	<label for="email-w" class="hide">Work Email</label>
+				        	<input type="text" id="email-w" placeholder="someone@gmail.com" class="email-w">
+				    		</form>
 				      </div>
 				    </div>
 				  </div>
@@ -110,9 +112,9 @@
 				      <div class="icon-container">
 				        <img src="../assets/images/pencil.png" alt="Notes Icon" id="notes-pic">
 				      </div>
-				      <div class="notes-info">
-				        <textarea placeholder="Notes"></textarea>
-				      </div>
+				      <form class="notes-info">
+				        <textarea id="notes" placeholder="Notes"></textarea>
+				      </form>
 				    </div>
 				  </div>
 
